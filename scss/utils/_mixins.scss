@@ -1,0 +1,13 @@
+@mixin respond($bp) {
+  @if $bp == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    var(--color-accent),
+    var(--color-accent-soft)
+  );
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

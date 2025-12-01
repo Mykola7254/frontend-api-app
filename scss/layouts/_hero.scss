@@ -1,0 +1,23 @@
+.hero {
+  max-width: 1100px;
+  margin: 32px auto;
+  background: radial-gradient(
+    circle at top left,
+    var(--color-accent),
+    var(--color-surface)
+  );
+  padding: 32px;
+  border-radius: 24px;
+
+  &__title {
+    font-size: 28px;
+
+    @include respond(tablet) {
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-muted);
+  }
+}

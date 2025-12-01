@@ -1,0 +1,19 @@
+.users {
+  &__container {
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+
+  &__list {
+    display: grid;
+    gap: 16px;
+
+    @include respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

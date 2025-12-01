@@ -1,0 +1,11 @@
+.nav {
+  &__link {
+    color: var(--color-muted);
+    margin-right: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
+}

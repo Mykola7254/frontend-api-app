@@ -1,0 +1,15 @@
+.about {
+  &__container {
+    max-width: 1100px;
+    margin: 32px auto;
+  }
+
+  &__item {
+    color: var(--color-muted);
+
+    &::before {
+      content: '• ';
+      color: var(--color-accent);
+    }
+  }
+}

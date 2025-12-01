@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BEM + HTTP + Local API Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header header">
+      <div class="header__container">
+        <div class="header__logo">MyAPI<span>Demo</span></div>
+        <nav class="header__nav nav">
+          <a href="#users" class="nav__link">Користувачі</a>
+          <a href="#about" class="nav__link">Про сайт</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Сайт з HTTP-запитами та BEM</h1>
+          <p class="hero__subtitle">
+            Натисни кнопку, і ми завантажимо список користувачів через
+            <strong>fetch</strong> (Promise) з публічного API.
+          </p>
+          <button class="hero__button button" id="load-users-btn">
+            Завантажити користувачів
+          </button>
+          <p class="hero__status" id="status-text"></p>
+        </div>
+      </section>
+
+      <section class="users" id="users">
+        <div class="users__container">
+          <h2 class="users__title">Список користувачів</h2>
+          <div class="users__list" id="users-list"></div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container">
+          <h2 class="about__title">Що тут використано?</h2>
+          <ul class="about__list">
+            <li class="about__item">SCSS препроцесор (змінні, вкладеність)</li>
+            <li class="about__item">BEM-класичні назви блоків та елементів</li>
+            <li class="about__item">
+              Media-запити для адаптиву (mobile → desktop)
+            </li>
+            <li class="about__item">
+              HTTP-запит через <code>fetch</code>, який повертає Promise
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="footer__container">
+        <p class="footer__text">
+          Зроблено для практики JS, BEM, SCSS та HTTP-запитів 💻
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

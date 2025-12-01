@@ -1,0 +1,18 @@
+.user-card {
+  background: var(--color-surface);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__email {
+    color: var(--color-accent);
+  }
+
+  &__meta {
+    color: var(--color-muted);
+  }
+}
